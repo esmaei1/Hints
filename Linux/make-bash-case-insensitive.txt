@@ -1,0 +1,10 @@
+# for current user
+if [ ! -a ~/.inputrc ]; then echo '$include /etc/inputrc' > ~/.inputrc; fi
+echo 'set completion-ignore-case On' >> ~/.inputrc
+
+# Make the changes systemwide
+echo 'set completion-ignore-case On' >> /etc/inputrc
+echo 'set completion-ignore-case On' | sudo tee -a /etc/inputrc
+
+
+

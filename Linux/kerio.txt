@@ -1,0 +1,18 @@
+download page
+https://www.gfi.com/products-and-solutions/network-security-solutions/kerio-control/resources/other-downloads/vpn
+installation:
+sudo apt-get install debconf openssl
+ sudo dpkg -i kerio-control-vpnclient-###-linux-amd64.deb
+---------------------------------------------
+start, stop & restart:
+sudo /etc/init.d/kerio-kvc start
+sudo /etc/init.d/kerio-kvc stop
+sudo /etc/init.d/kerio-kvc restart
+----------------------------------------------
+reconfiguration:
+sudo dpkg-reconfigure kerio-control-vpnclient
+----------------------------------------------
+uninstall:
+sudo apt-get remove kerio-control-vpnclient
+or
+sudo apt-get remove --purge kerio-control-vpnclient

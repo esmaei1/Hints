@@ -1,0 +1,45 @@
+jobs
+  700  ps aux|grep runserver
+  701  locate manage.py
+  702  cd /var/www/git/webapps/HeartFailure_site/
+  703  ll
+  704  cat nohup.out | grep tag
+  705  cat nohup.out 
+  706  cd
+  707  cd git
+  708  ll
+  709  cd webapps
+  710  ll
+  711  cd patient_rights/
+  712  ll
+  713  cd SA_project/
+  714  ll
+  715  python manage.py runserver
+  716  exit
+  717  cd git/webapps/
+  718  ll
+  719  ll -a
+  720  cd .git/
+  721  ll
+  722  cd
+  723  cd /home/hmaleki/git
+  724  cd webapps/patient_rights/
+  725  ll
+  726  cd SA_project/
+  727  ll
+  728  python manage.py runserver
+  729  cd
+  730  locate sentiment_analysis_features_vectorizer.py
+  731  cd /export/home/hmaleki/git/webapps/patient_rights/SA_project/
+  732  ll
+  733  python manage.py runserver
+  734  exit
+  735  ll
+  736  cd git/webapps/patient_rights/SA_project/
+  737  ll
+  738  source activate /mnt/share/dev/python/conda/django_webapp2
+  739  cd ~/git/webapps/patient_rights/SA_project
+  740  nohup python manage.py runserver 127.0.0.1:8000  &
+  741  ps aux|grep runserver
+  742  history 
+

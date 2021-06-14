@@ -1,0 +1,13 @@
+1- tail apache2 server error log at:
+	/var/log/apache2/error.log
+
+and fid error id
+
+2- Add this on end of the /etc/apache2/mods-available/security2.conf
+
+<IfModule mod_security2.c>
+    SecRuleRemoveById 950109 950901 958291 960024 973338 981172 981173 981231  
+</IfModule>
+
+3- more hints:
+https://www.netnea.com/cms/apache-tutorial-8_handling-false-positives-modsecurity-core-rule-set

@@ -1,0 +1,5 @@
+# backup a database:
+pg_dump name_of_database > name_of_backup_file
+
+# restore database
+psql empty_database < backup_file

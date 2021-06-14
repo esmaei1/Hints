@@ -1,0 +1,13 @@
+make auto reload with Spring-boot on IDEA Intellij:
+1- add spring-boot-devtools as depency:
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-devtools</artifactId>
+    <optional>true</optional>
+</dependency>
+
+2- verify that the option check-box File->Setting –> Build, Execution, Deployment –> Compiler–>Build project automatically is selected.
+
+3- press shift+shift  then type registry in the opened pop-up window.
+ Scroll down to Registry... using the down arrow key and hit ENTER on Registry....
+ In the Registry window verify the option compiler.automake.allow.when.app.running is checked.

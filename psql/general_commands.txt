@@ -1,0 +1,7 @@
+sudo -u postgres -i            // Use the operating system user postgres
+\l (list)                      // Listing Databases
+\c (connect)  some_database    // Switching Databases
+\dt                            // Listing Tables
+
+
+

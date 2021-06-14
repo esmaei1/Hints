@@ -1,0 +1,39 @@
+Look like one of the dependencies is using old version of groovy. If you check the dependency tree using command :
+
+ mvn dependency:tree -Dincludes=org.codehaus.groovy
+you can see the dependency that requries it :
+
+[INFO] com.example:demo:jar:0.0.1-SNAPSHOT
+[INFO] \- org.springframework.boot:spring-boot-starter-data-cassandra:jar:2.3.4.RELEASE:compile
+[INFO]    \- org.springframework.data:spring-data-cassandra:jar:3.0.4.RELEASE:compile
+[INFO]       \- com.datastax.oss:java-driver-core:jar:4.6.1:compile
+[INFO]          \- org.apache.tinkerpop:gremlin-driver:jar:3.4.5:compile
+[INFO]             +- org.codehaus.groovy:groovy:jar:indy:2.5.7:compile
+[INFO]             \- org.codehaus.groovy:groovy-json:jar:indy:2.5.7:compile
+
+A temporary solution would be to exclude those dependencies and add them with newer version :
+
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-data-cassandra</artifactId>
+    <exclusions>
+        <exclusion>
+            <groupId>org.codehaus.groovy</groupId>
+            <artifactId>groovy</artifactId>
+        </exclusion>
+        <exclusion>
+            <groupId>org.codehaus.groovy</groupId>
+            <artifactId>groovy-json</artifactId>
+        </exclusion>
+    </exclusions>
+</dependency>
+<dependency>
+    <groupId>org.codehaus.groovy</groupId>
+    <artifactId>groovy</artifactId>
+        <version>2.5.13</version>
+</dependency>
+<dependency>
+    <groupId>org.codehaus.groovy</groupId>
+    <artifactId>groovy-json</artifactId>
+    <version>2.5.13</version>
+</dependency>

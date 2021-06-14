@@ -1,0 +1,5 @@
+#show ports are listening
+netstat -lntu
+
+#make a prot available
+sudo ufw allow (port)/tcp

@@ -1,0 +1,6 @@
+null
+undefined
+0
+"" (the empty string)
+false
+NaN

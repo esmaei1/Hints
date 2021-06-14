@@ -1,0 +1,2 @@
+installation guid:
+https://blog.rapid7.com/2017/04/09/how-to-configure-modsecurity-with-apache-on-ubuntu-linux

@@ -1,0 +1,35 @@
+step 1- cvt 2560 1080 40
+result: 
+# ۲۵۶۰x1080 39.93 Hz (CVT) hsync: 44.25 kHz; pclk: 147.25 MHz
+Modeline "2560x1080_40.00"  147.25  2560 2680 2944 3328  1080 1083 1093 1108 -hsync +vsync
+copy after Modeline and :
+step 2- xrandr --newmode "2560x1080_40.00"  147.25  2560 2680 2944 3328  1080 1083 1093 1108 -hsync +vsync
+step 2- xrandr -q
+result: 
+Screen 0: minimum 320 x 200, current 1920 x 1080, maximum 8192 x 8192
+DVI-I-1 disconnected (normal left inverted right x axis y axis)
+DVI-I-2 disconnected (normal left inverted right x axis y axis)
+HDMI-1 connected primary 1920x1080+0+0 (normal left inverted right x axis y axis) 677mm x 290mm
+   ۱۹۲۰x1080      60.0*    50.0     59.9     30.0     30.0  
+   ۱۹۲۰x1080i     60.1     50.0     60.0  
+   ۱۶۸۰x1050      59.9  
+   ۱۶۰۰x900       60.0  
+   ۱۲۸۰x1024      75.0     60.0  
+   ۱۱۵۲x864       75.0  
+   ۱۲۸۰x720       60.0     50.0     59.9  
+   ۱۰۲۴x768       75.1     60.0  
+   ۸۰۰x600        75.0     60.3  
+   ۷۲۰x576        50.0  
+   ۷۲۰x480        60.0     59.9  
+   ۶۴۰x480        75.0     60.0     59.9  
+   ۷۲۰x400        70.1  
+  ۲۵۶۰x1080_40.00 (0x28e)  147.2MHz
+        h: width  2560 start 2680 end 2944 total 3328 skew    0 clock   44.2KHz
+        v: height 1080 start 1083 end 1093 total 1108           clock   39.9Hz
+
+step 4- xrandr --addmode HDMI-1 2560x1080_40.00
+HDMI-1 is connected port
+
+==============================================================================================================
+source:
+https://fotolia.ir/33866-%D8%AD%D9%84-%D9%85%D8%B4%DA%A9%D9%84-%D8%A7%D8%A8%D9%88%D9%86%D8%AA%D9%88-monitor-%D8%A7%D9%88%D9%84%D8%AA%D8%B1%D8%A7-%D9%88%D8%A7%DB%8C%D8%AF-lg25um65-p/

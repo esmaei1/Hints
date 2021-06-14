@@ -1,0 +1,16 @@
+1. include the spring-boot-devtools dependency
+Maven
+<dependencies>
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-devtools</artifactId>
+        <optional>true</optional>
+    </dependency>
+</dependencies>
+
+2. in intellij: Setting->Build, Excegution, Deployment->Compiler->enable “Make project automatically”
+   in the compiler preferences for automatic restarts to work.
+
+3. enable the compiler.automake.allow.when.app.running registry setting in IntelliJ.
+   You can access the registry in IntelliJ using the shortcut
+   Shift+Command+A, then searching for registry.

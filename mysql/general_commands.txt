@@ -1,0 +1,5 @@
+sudo mysql -u root  // run mysql as root user
+show databases      // show list of all databases
+create database     // create a database
+use example_database   // use a database
+show tables            // show list of tables of a database
