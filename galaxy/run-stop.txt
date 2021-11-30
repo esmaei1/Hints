@@ -1,0 +1,8 @@
+to start server:
+
+sh run.sh --daemon
+
+to stop server:
+
+sh run.sh --stop-daemon
+

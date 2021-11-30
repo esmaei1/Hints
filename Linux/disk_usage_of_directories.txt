@@ -1,0 +1,4 @@
+$ du -sh */
+788K    foo/
+500K    bar/
+931K    baz/
