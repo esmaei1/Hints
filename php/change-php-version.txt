@@ -1,0 +1,9 @@
+# change PHP 7.4 to PHP 8.0
+
+sudo a2dismod php7.4
+sudo a2enmod php8.0
+sudo service apache2 restart
+sudo update-alternatives --config php
+sudo update-alternatives --config phar
+sudo update-alternatives --config phar.phar
+sudo service apache2 restart
