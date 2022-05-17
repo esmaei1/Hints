@@ -1,0 +1,1 @@
+psql -U bmhi_kava_user -h localhost -d bmhi_kava < /home/soomari/temp/p_type_of_user5.back -W

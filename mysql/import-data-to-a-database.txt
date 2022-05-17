@@ -1,0 +1,1 @@
+mysql -u user_of_database -p database_name < file.sql
