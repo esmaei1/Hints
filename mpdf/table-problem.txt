@@ -1,0 +1,1 @@
+https://stackoverflow.com/questions/41612412/mpdf-columns-width-is-not-getting-fixed-and-increases-with-data
